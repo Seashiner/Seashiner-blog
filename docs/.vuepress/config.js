@@ -3,16 +3,18 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/sun.png' }]
   ],
-  base:'/Seashiner-blog/',
   locales: {
     '/': {
       lang: 'zh-CN', 
     },
   },
+  base:'/Seashiner-blog/',
   themeConfig: {
     lastUpdated: '上次更新',
     repo: 'Seashiner/Seashiner-blog',
     editLinks: true,
+    editLinkText: '编辑文档',
+    docsDir: 'docs',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },

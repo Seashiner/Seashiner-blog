@@ -10,6 +10,7 @@ module.exports = {
   },
   base:'/Seashiner-blog/',
   themeConfig: {
+    logo: '/sun.png',
     lastUpdated: '上次更新',
     repo: 'Seashiner/Seashiner-blog',
     editLinks: true,
@@ -30,7 +31,6 @@ module.exports = {
           ] },
         ]
       },
-      { text: 'github', link: 'https://github.com/Seashiner/Seashiner-blog' },
     ],
 
     sidebar: [

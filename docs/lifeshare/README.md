@@ -1,3 +1,5 @@
+![avatar](light.jpg)
+
 # LIFE
 
 ## I LOVE LIFE

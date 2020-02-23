@@ -1,5 +1,6 @@
 module.exports = {
   title:'SeaShiner',
+  description: "vuepress",
   head: [
     ['link', { rel: 'icon', href: '/sun.png' }]
   ],
@@ -8,7 +9,6 @@ module.exports = {
       lang: 'zh-CN', 
     },
   },
-  base:'/Seashiner-blog/',
   themeConfig: {
     logo: '/sun.png',
     lastUpdated: '上次更新',
@@ -17,29 +17,19 @@ module.exports = {
     editLinkText: '编辑文档',
     docsDir: 'docs',
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
+      { text: '首页', link: '/' },
       {
-        text: 'Languages',
-        ariaLabel: 'Language Menu',
+        text: '华山论剑',
+        ariaLabel: '华山论剑',
         items: [
-          { text: 'Chinese', link: '/language/chinese/' },
-          { text: 'Japanese', link: '/language/japanese/' },
-          { text: 'others', items: [
-            { text: 'English', link: '/language/english/' },
-            { text: 'French', link: '/language/french/' },
-          ] },
+          { text: 'Html/CSS', link: '/html/' },
+          { text: 'JS', link: '/JS/' },
+          { text: 'VUE', link: '/VUE/' },
         ]
       },
+      { text: '说学逗唱', link: '/lifeshare/' },
     ],
 
-    sidebar: [
-      '/',
-      '/guide/',
-      '/language/chinese', 
-      '/language/japanese', 
-      '/language/english', 
-      '/language/french', 
-    ],
+    sidebar: 'auto',
   }
 }

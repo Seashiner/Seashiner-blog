@@ -18,16 +18,9 @@ module.exports = {
     docsDir: 'docs',
     nav: [
       { text: '首页', link: '/' },
-      {
-        text: '华山论剑',
-        ariaLabel: '华山论剑',
-        items: [
-          { text: 'Html/CSS', link: '/html/' },
-          { text: 'JS', link: '/JS/' },
-          { text: 'VUE', link: '/VUE/' },
-        ]
-      },
-      { text: '说学逗唱', link: '/lifeshare/' },
+      { text: '华山论剑', link: '/dev/' },
+      { text: '曲艺杂谈', link: '/lifeshare/' },
+      { text: '诗和远方', link: '/literary/' },
     ],
 
     sidebar: 'auto',

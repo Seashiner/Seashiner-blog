@@ -9,6 +9,7 @@ module.exports = {
       lang: 'zh-CN', 
     },
   },
+  plugins: ['@vuepress/blog'],
   themeConfig: {
     logo: '/sun.png',
     lastUpdated: '上次更新',
@@ -17,7 +18,6 @@ module.exports = {
     editLinkText: '编辑文档',
     docsDir: 'docs',
     nav: [
-      { text: '首页', link: '/' },
       { text: '华山论剑', link: '/dev/' },
       { text: '曲艺杂谈', link: '/lifeshare/' },
       { text: '诗和远方', link: '/literary/' },

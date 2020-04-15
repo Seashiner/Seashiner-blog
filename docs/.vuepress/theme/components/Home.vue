@@ -1,9 +1,9 @@
 <template>
   <main
-    class="home"
+    class="home homeBg"
     aria-labelledby="main-title"
   >
-    <header class="hero">
+    <header class="hero" :style="{height : heightContent}">
       <img
         v-if="data.heroImage"
         :src="$withBase(data.heroImage)"
@@ -11,18 +11,14 @@
       >
 
       <h1
+        class="my_title"
         v-if="data.heroText !== null"
         id="main-title"
       >
         {{ data.heroText || $title || 'Hello' }}
       </h1>
 
-      <p
-        v-if="data.tagline !== null"
-        class="description"
-      >
-        {{ data.tagline || $description || 'Welcome to your VuePress site' }}
-      </p>
+      
 
       <p
         v-if="data.actionText && data.actionLink"
@@ -49,11 +45,11 @@
       </div>
     </div>
 
-    <Content class="theme-default-content custom" />
+    <Content class="theme-default-content custom " />
 
     <div
       v-if="data.footer"
-      class="footer"
+      class="footer my_footer"
     >
       {{ data.footer }}
     </div>
@@ -78,8 +74,13 @@ export default {
         link: this.data.actionLink,
         text: this.data.actionText
       }
+    },
+
+    heightContent(){
+      return document.documentElement.clientHeight - 160 + 'px'
     }
-  }
+  },
+
 }
 </script>
 
@@ -172,4 +173,24 @@ export default {
     .feature
       h2
         font-size 1.25rem
+</style>
+<style scope>
+  /* html,body{
+    overflow: hidden;
+  } */
+  .homeBg{
+    max-width:1366px;
+    background: url('../../public/girl.png') no-repeat;
+    background-size: cover;
+  }
+  .home .hero h1.my_title{
+    color:#fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-150%);
+  }
+  .home .my_footer{
+    color:#fff;
+  }
 </style>

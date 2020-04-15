@@ -1,8 +1,8 @@
 ---
 home: true
-heroImage: /user.jpg
+# heroImage: /user.jpg
 # heroText: shiner
-tagline: 每一个不曾起舞的日子，都是对生命的辜负。——尼采
+# tagline: 每一个不曾起舞的日子，都是对生命的辜负。——尼采
 # actionText: 快速上手 →
 # actionLink: /zh/guide/
 # features:

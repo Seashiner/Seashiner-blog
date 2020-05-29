@@ -1,5 +1,5 @@
 <template>
-  <header class="navbar">
+  <header class="navbar nav">
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')" />
 
     <RouterLink
@@ -21,7 +21,7 @@
     </RouterLink>
 
     <div
-      class="links"
+      class="links myLink"
       :style="linksWrapMaxWidth ? {
         'max-width': linksWrapMaxWidth + 'px'
       } : {}"
@@ -138,12 +138,12 @@ $navbar-horizontal-padding = 1.5rem
       white-space nowrap
       text-overflow ellipsis
 </style>
-<style>
-.navbar{
+<style scope>
+.nav{
   background-color: rgba(255, 255, 255, .5);
   border-bottom: none;
 }
-.navbar .links{
+.nav .myLink{
   background-color: rgba(255, 255, 255, 0);
 }
 </style>

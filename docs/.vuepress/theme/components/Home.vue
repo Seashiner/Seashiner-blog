@@ -18,7 +18,6 @@
         {{ data.heroText || $title || 'Hello' }}
       </h1>
 
-
       <p
         v-if="data.actionText && data.actionLink"
         class="action"
@@ -172,7 +171,6 @@ export default {
       h2
         font-size 1.25rem
 </style>
-
 <style scope>
   /* html,body{
     overflow: hidden;
@@ -193,4 +191,3 @@ export default {
     color:#fff;
   }
 </style>
-

@@ -138,3 +138,12 @@ $navbar-horizontal-padding = 1.5rem
       white-space nowrap
       text-overflow ellipsis
 </style>
+<style>
+.navbar{
+  background-color: rgba(255, 255, 255, .5);
+  border-bottom: none;
+}
+.navbar .links{
+  background-color: rgba(255, 255, 255, 0);
+}
+</style>

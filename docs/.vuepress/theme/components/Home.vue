@@ -75,7 +75,7 @@ export default {
     },
 
     heightContent(){
-      return document.documentElement.clientHeight - 160 + 'px'
+      return 465 + 'px'
     }
   },
 
